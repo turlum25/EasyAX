@@ -8,68 +8,19 @@
 
 EasyAX is an operating system mostly based off of the Aldise kernel. Currently, this hellhole is in development and will soon include a lotta stuff.
 
+# Requirements of running EasyAX
+
+To run EasyAX, this is the minimum requirements for EasyAX:
+
+- Intel i486
+- 4MB RAM
+
+Even with these hardware, it will still run like absolute butter. And yes, this was also tested in real hardware (which was my Xiaomi Notebook Air 13.3 2016, which runs flawlessly in CSM.)
+
+# Why not lower RAM?
+
+Do you have only 86 cents in your bank account? Anyone can afford at least 4 megs of RAM. If you go lower, GRUB cannot load the image and crashes.
+
+And plus OpenAI doesn't take 4 megs of RAM. Don't worry. You'll be safe.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-I don't know what to say here.
-I'd rather name a cat as AMD Ryzen 5 5600G rather than say anything else
