@@ -32,6 +32,8 @@
 #include "drivers/cpu/detect.h"
 #include "init.h"
 
+#include "version.h"
+
 void kernel_start(unsigned int multiboot_magic, unsigned int multiboot_info_addr)
 {
     init(multiboot_magic, multiboot_info_addr);
@@ -40,14 +42,12 @@ void kernel_start(unsigned int multiboot_magic, unsigned int multiboot_info_addr
     }
 }
 
-#define VERSION "0.02"
+
 void kernel_main(void) {
     // Version of kernel. Not OS.
     print_text("\naldise : v");
-    print_text(VERSION);
+    print_text(KERNELVER);
     print_text("\n");
-    
-
     
     // Prints CPU (drivers found in drivers/cpu/detect.h).
     DetectCPU();
