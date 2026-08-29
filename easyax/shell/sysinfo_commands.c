@@ -8,28 +8,35 @@
 #include "fs/mbr.h"
 #include "fs/fat16.h"
 #include "elf/elf32.h"
+#include "../../kernel/drivers/cpu/detect.h"
+#include "../../kernel/version.h"
 
 // command: uname
 // options: -a (all), -s (kernel name, default), -r (release), -m (machine)
 void command_uname(char* option)
 {
     if (option == (char*)0 || strcmp(option, "-s") == 0) {
-        print_text("AlderKernel\n");
+        print_text("Aldise\n");
         return;
     }
 
     if (strcmp(option, "-r") == 0) {
-        print_text("0.3\n");
+        print_text(KERNELVER);
+        print_text("\n");
         return;
     }
 
     if (strcmp(option, "-m") == 0) {
-        print_text("i386\n");
+        print_text(CPUType);
         return;
     }
 
     if (strcmp(option, "-a") == 0) {
-        print_text("AlderKernel 0.3 i386 zSlash\n");
+        print_text("AlderKernel ");
+        print_text(KERNELVER);
+        print_text("\nCPU: ");
+        print_text(CPUType);
+        print_text("\nShell: zSlash\n");
         return;
     }
 
