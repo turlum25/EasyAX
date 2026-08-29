@@ -27,3 +27,8 @@ And plus OpenAI doesn't take 4 megs of RAM. Don't worry. You'll be safe.
 - Automatic CPU detection
 - Readability of kernel source code.
 - Eggs and toast.
+
+# What can EasyAX do out of the box?
+
+- ELF32 support
+- Yeah, i really forgot most of them. It's a hobby OS, I shouldn't treat the readme too seriously.
