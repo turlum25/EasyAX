@@ -32,7 +32,7 @@ void command_uname(char* option)
     }
 
     if (strcmp(option, "-a") == 0) {
-        print_text("AlderKernel ");
+        print_text("Aldise ");
         print_text(KERNELVER);
         print_text("\nCPU: ");
         print_text(CPUType);
